@@ -1,0 +1,945 @@
+/*----------------------------------
+---------------Variables------------
+------------------------------------*/
+/* Colors -------------------------------*/
+/**
+ * Mixins
+ * --------------------------------------------------
+ */
+/*@mixin transition-properties($values) {
+  -webkit-transition: $values;
+  -moz-transition: $values;
+  -ms-transition: $values;
+  -o-transition: $values;
+  transition: $values;
+}
+@mixin border-radius-properties($value) {
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  -ms-border-radius: $value;
+  border-radius: $value;
+}
+@mixin box-shadow-properties($value) {
+  -webkit-box-shadow: $value;
+  -moz-box-shadow: $value;
+  box-shadow: $value;
+}
+@mixin background-button-properties($color1, $color2) {
+  background: $color1 !important;
+  background: -moz-linear-gradient(top, $color1 0%, $color2 100%) !important;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, $color1), color-stop(100%, $color2)) !important;
+  background: -webkit-linear-gradient(top, $color1 0%, $color2 100%) !important;
+  background: -o-linear-gradient(top, $color1 0%, $color2 100%) !important;
+  background: -ms-linear-gradient(top, $color1 0%, $color2 100%) !important;
+  background: linear-gradient(to bottom, $color1 0%, $color2 100%) !important;
+}
+@mixin background-gradient-properties($color1, $color2) {
+  background-image: $color1;
+  background-image: -moz-linear-gradient(left, $color1 0%, $color1 15%, $color2 85%, $color2 100%);
+  background-image: -webkit-gradient(left top, right top, color-stop(0%, $color1), color-stop(15%, $color1), color-stop(85%, $color2), color-stop(100%, $color2));
+  background-image: -webkit-linear-gradient(left, $color1 0%, $color1 15%, $color2 85%, $color2 100%);
+  background-image: -o-linear-gradient(left, $color1 0%, $color1 15%, $color2 85%, $color2 100%);
+  background-image: -ms-linear-gradient(left, $color1 0%, $color1 15%, $color2 85%, $color2 100%);
+  background-image: linear-gradient(to right, $color1 0%, $color1 15%, $color2 85%, $color2 100%);
+}*/
+/*----------------------------------
+-----------------Fonts--------------
+------------------------------------*/
+/*@font-face {
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: 'Montserrat-Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat/Montserrat-SemiBold.ttf");
+}*/
+/*----------------------------------
+----------------General--------------
+------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+/*body {
+  font-family: 'Montserrat-Regular', sans-serif;
+  color: $paragraph-text-color;
+  background: $main-bg;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+*:focus {
+  outline: 0;
+}
+
+%purple-underline {
+  content: "";
+  position: absolute;
+  width: 142px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  margin: auto;
+  border: 1px solid $heading-color;
+}
+
+.subject-content {
+  .titles-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    .main-title {
+      font-family: 'Montserrat-Bold';
+      text-transform: capitalize;
+      margin-bottom: 0;
+    }
+
+    .grade-title {
+      font-family: 'Montserrat-Bold';
+      margin-left: 20px;
+    }
+
+    .grade-label {
+      color: white;
+      font-size: 1.5em;
+      font-family: 'Montserrat-SemiBold';
+    }
+  }
+
+  .pills-container {
+    margin-bottom: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+  }
+
+  .bimester-pills {
+    a {
+      border-radius: 100px;
+      text-transform: capitalize;
+      color: white;
+    }
+
+    .active {
+      a {
+        background-color: rgba(black, 0.5) !important;
+      }
+    }
+  }
+
+  &.matematicas {
+    .titles-container {
+      background: $maths-banner-bg url("../images/img-maths-pattern-bg.png") no-repeat center / cover;
+    }
+
+    .grade-title,
+    .main-title {
+      color: $maths-banner-tx;
+    }
+
+    .pills-container {
+      background-color: $maths-pills-container-bg;
+    }
+
+    .bimester-pills {
+      a {
+        background-color: $maths-banner-bg;
+
+        &:hover {
+          background-color: $maths-banner-tx;
+          color: black;
+        }
+      }
+    }
+  }
+
+  &.ciencias {
+    .titles-container {
+      background: $science-banner-bg url("../images/img-science-pattern-bg.png") no-repeat center / cover;
+    }
+
+    .grade-title,
+    .main-title {
+      color: $science-banner-tx;
+    }
+
+    .pills-container {
+      background-color: $science-pills-container-bg;
+    }
+
+    .bimester-pills {
+      a {
+        background-color: $science-banner-bg;
+
+        &:hover {
+          background-color: $science-banner-tx;
+          color: black;
+        }
+      }
+    }
+  }
+
+  &.sociales {
+    .titles-container {
+      background: $social-banner-bg url("../images/img-social-pattern-bg.png") no-repeat center / cover;
+    }
+
+    .grade-title,
+    .main-title {
+      color: $social-banner-tx;
+    }
+
+    .pills-container {
+      background-color: $social-pills-container-bg;
+    }
+
+    .bimester-pills {
+      a {
+        background-color: $social-banner-bg;
+
+        &:hover {
+          background-color: $social-banner-tx;
+          color: black;
+        }
+      }
+    }
+  }
+
+  &.lenguaje {
+    .titles-container {
+      background: $language-banner-bg url("../images/img-language-pattern-bg.png") no-repeat center / cover;
+    }
+
+    .grade-title,
+    .main-title {
+      color: $language-banner-tx;
+    }
+
+    .pills-container {
+      background-color: $language-pills-container-bg;
+    }
+
+    .bimester-pills {
+      a {
+        background-color: $language-banner-bg;
+
+        &:hover {
+          background-color: $language-banner-tx;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.bimester-content {
+  .panel {
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+    margin: 30px 0;
+    @include box-shadow-properties(0 0 20px 0 rgba(0, 0, 0, 0.3));
+
+    .panel-heading {
+      font-family: 'Montserrat-Medium';
+      font-size: 1.4em;
+      background: transparent;
+      color: $header-color1;
+    }
+
+    .guide-modal-button,
+    .video-modal-button {
+      background-color: white;
+      border: 2px solid $header-color1;
+      border-top-left-radius: 0;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+      border-bottom-left-radius: 0;
+      font-family: 'Montserrat-Medium';
+      color: $header-color1;
+      font-size: 1em;
+      margin-bottom: 15px;
+      position: relative;
+      padding-left: 65px;
+      height: 55px;
+      text-align: left;
+      text-transform: capitalize;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &:hover {
+        background-color: rgba($header-color1, 0.5);
+        color: white;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 55px;
+      }
+    }
+
+    .guide-modal-button {
+      &:after {
+        background: $header-color1 url("../images/img-pdf-icon.png") no-repeat center / 60% auto;
+      }
+    }
+
+    .video-modal-button {
+      &:after {
+        background: $header-color1 url("../images/img-video-icon.png") no-repeat center / 70% auto;
+      }
+    }
+  }
+}
+*/
+/*----------------------------------
+----------------Header--------------
+------------------------------------*/
+/*.header {
+  background-color: $header-color1;
+  background-position: center top, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .header-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}*/
+/*----------------------------------
+----------------Modal--------------
+------------------------------------*/
+/*
+.modal-dialog {
+  margin-top: 140px;
+}
+
+.btn-modal {
+  background-color: white;
+  color: $heading-color !important;
+  font-size: 1.18em;
+  font-weight: 600;
+  border-radius: 25px;
+}
+
+.close-container {
+  text-align: right;
+}
+
+.modal-header {
+  border: none;
+}
+
+.modal-title {
+  padding: 0 40px 7px;
+  color: $heading-color;
+  font-size: 1.87em;
+  text-align: center;
+  font-family: 'Montserrat-Medium';
+  position: relative;
+
+  big {
+    display: block;
+  }
+
+  &:after {
+    @extend %purple-underline;
+  }
+}
+
+button.close {
+  float: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  opacity: 1;
+  color: white;
+  font-size: 2em;
+  font-family: 'Montserrat-Medium';
+  @include background-gradient-properties($cpa-color, $red-menu-color);
+}
+
+.modal-body {
+  line-height: 200%;
+  padding: 15px 40px;
+
+  embed,
+  iframe,
+  object {
+    height: 30vw;
+  }
+}
+
+.modal-backdrop.in {
+  opacity: 0.8;
+  background-color: $modal-backdrop-bg;
+}*/
+/*----------------------------------
+--------------Home-Items------------
+------------------------------------*/
+/*
+.home-videos {
+  position: relative;
+
+  .video-buttons-container {
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    @include box-shadow-properties(0 0 20px 0 rgba(0, 0, 0, 0.3));
+  }
+
+  .embed-responsive-16by9 {
+    &.red {
+      background-color: $language-bg;
+    }
+
+    &.green {
+      background-color: $science-bg;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      height: 75px;
+      width: 108px;
+      background-image: url("../images/img-spritesheet.png");
+      background-position: -5px -62px;
+    }
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  h1 {
+    font-family: 'Montserrat-Medium';
+    font-size: 1.5em;
+    text-align: center;
+    color: $header-color1;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 142px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 0;
+      margin: auto;
+      border: 1px solid #2f296e;
+    }
+  }
+
+  .btn-video {
+    width: 100%;
+  }
+}*/
+/*----------------------------------
+---------------Main Menu------------
+------------------------------------*/
+/*
+%main-menu-button {
+  height: 140px;
+  width: 140px;
+  background-color: $main-menu-bg;
+  border-radius: 50%;
+  border: 3px solid white;
+  position: relative;
+  font-family: 'Montserrat-Medium';
+  font-size: 1em;
+  padding-top: 20px;
+}
+
+%main-menu-button-hover {
+  background-color: $main-menu-bg-hover;
+}
+
+.main-menu {
+  background-color: $main-menu-bg;
+
+  .grade-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grade-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border: 3px solid rgba($header-color1, 0.2);
+    border-radius: 200px;
+  }
+
+  .btn:active:focus {
+    outline: 0;
+  }
+
+  .home-button-container {
+    .btn-primary {
+      @extend %main-menu-button;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../images/img-menu-home.png") no-repeat center 70% /50% auto;
+      }
+
+      &:hover {
+        @extend %main-menu-button-hover;
+      }
+    }
+  }
+
+  .dropdown {
+    .btn {
+      padding-bottom: 80%;
+      z-index: 2;
+      @extend %main-menu-button;
+
+      &:after {
+        position: absolute;
+        font-family: 'Montserrat-Medium';
+        font-size: 4.5em;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 22px;
+      }
+
+      &:hover {
+        @extend %main-menu-button-hover;
+      }
+    }
+  }
+
+  .grade-button-container-grado7 {
+    .btn {
+      &:after {
+        content: "7";
+      }
+    }
+  }
+
+  .grade-button-container-grado8 {
+    .btn {
+      &:after {
+        content: "8";
+      }
+    }
+  }
+
+  .grade-button-container-grado9 {
+    .btn {
+      &:after {
+        content: "9";
+      }
+    }
+  }
+
+  .dropdown-menu {
+    display: block;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+
+    a,
+    li {
+      width: 110px;
+      height: 110px;
+      border-radius: 100%;
+    }
+
+    li {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      @include box-shadow-properties(2px 3px 3px 2px rgba(0, 0, 0, 0.3));
+      @include transition-properties(all 0.4s ease);
+    }
+
+    a {
+      padding: 65px 0 0;
+      text-transform: capitalize;
+      font-family: 'Montserrat-Medium';
+      font-size: 0.95em;
+      text-align: center;
+      color: white;
+      position: relative;
+
+      &:hover {
+        color: white;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(black, 0.3);
+          border-radius: 100%;
+        }
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 40px;
+        height: 40px;
+        background-image: url("../images/img-spritesheet.png");
+      }
+    }
+
+    .subject-link-container-ciencias {
+      a {
+        background-color: $science-bg;
+
+        &:after {
+          background-position: -7px -9px;
+        }
+      }
+    }
+
+    .subject-link-container-lenguaje {
+      a {
+        background-color: $language-bg;
+
+        &:after {
+          background-position: -64px -8px;
+        }
+      }
+    }
+
+    .subject-link-container-matematicas {
+      a {
+        background-color: $maths-bg;
+
+        &:after {
+          background-position: -117px -8px;
+        }
+      }
+    }
+
+    .subject-link-container-sociales {
+      a {
+        background-color: $social-bg;
+
+        &:after {
+          background-position: -170px -8px;
+        }
+      }
+    }
+  }
+
+  .open {
+    .dropdown-backdrop {
+      display: none;
+    }
+
+    & > .dropdown-toggle.btn-primary:focus {
+      background-color: $main-menu-bg-selected;
+    }
+  }
+}*/
+/*----------------------------------
+----------------Footer--------------
+------------------------------------*/
+/*.footer {
+  padding: 50px 0;
+  background: $footer-bg;
+}*/
+/*----------------------------------
+----------------Table--------------
+------------------------------------*/
+/*----------------------------------
+--------------Media Query-----------
+------------------------------------*/
+/*/
+@media screen and (min-width: 1200px) {
+  .bimester-content {
+    .guide-modal-button,
+    .video-modal-button {
+      width: 23%;
+      margin-right: 2%;
+    }
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .bimester-content {
+    .guide-modal-button,
+    .video-modal-button {
+      width: 31%;
+      margin-right: 2%;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .dropdown {
+    margin-left: 4vw;
+  }
+
+  .open {
+    .subject-link-container-ciencias {
+      top: 140px !important;
+      left: -132px !important;
+    }
+
+    .subject-link-container-sociales {
+      top: 140px !important;
+      left: 170px !important;
+    }
+
+    .subject-link-container-matematicas {
+      top: 210px !important;
+      left: 76px !important;
+    }
+
+    .subject-link-container-lenguaje {
+      top: 210px !important;
+      left: -40px !important;
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .dropdown {
+    margin-left: 15px;
+  }
+
+  .open {
+    .subject-link-container-ciencias {
+      top: 140px !important;
+      left: 15px !important;
+    }
+
+    .subject-link-container-sociales {
+      top: 410px !important;
+      left: 15px !important;
+    }
+
+    .subject-link-container-matematicas {
+      top: 320px !important;
+      left: 15px !important;
+    }
+
+    .subject-link-container-lenguaje {
+      top: 230px !important;
+      left: 15px !important;
+    }
+  }
+}
+@media screen and (min-width: 550px) and (max-width:991px) {
+  .bimester-content {
+    .guide-modal-button,
+    .video-modal-button {
+      width: 48%;
+      margin-right: 2%;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+
+  .header {
+    .header-first-row {
+      display: flex;
+    }
+
+    .site-title {
+      max-width: 43vw;
+    }
+
+    .header-logo-container {
+      .img-responsive {
+        max-width: 18vw;
+        margin-bottom: 18px;
+      }
+    }
+  }
+
+  .subject-content {
+    .main-title {
+      font-size: 2.75em;
+    }
+
+    .grade-title {
+      font-size: 9.5em;
+    }
+
+    .bimester-pills {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  .footer {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .img-responsive {
+      max-height: 55px;
+    }
+
+    .two-logo-container {
+      display: flex;
+      width: 50%;
+      justify-content: space-around;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+
+  .header {
+    .header-logo-container {
+      .img-responsive {
+        max-width: 60vw;
+        margin: 15px -15px;
+      }
+    }
+  }
+
+  .subject-content {
+    .main-title {
+      font-size: 2em;
+    }
+
+    .grade-title {
+      font-size: 5em;
+    }
+
+    .bimester-pills {
+      li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .footer {
+    .container {
+      text-align: center;
+    }
+
+    .img-responsive {
+      display: inline-block;
+      margin: auto;
+      min-width: 25%;
+    }
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 550px) {
+  .footer {
+    .two-logo-container {
+      .logo-container {
+        width: 50%;
+      }
+
+      .img-responsive {
+        margin-bottom: 0;
+      }
+
+      &:first-child {
+        margin-bottom: 30px;
+      }
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+@media screen and (max-width: 549px) {
+  .bimester-content {
+    .guide-modal-button,
+    .video-modal-button {
+      width: 100%;
+    }
+  }
+
+  .footer {
+    .two-logo-container {
+      .img-responsive {
+        display: block;
+        margin-bottom: 40px;
+      }
+
+      &:last-child {
+        .logo-container:last-child .img-responsive {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+*/
+
+/*# sourceMappingURL=style.css.map */
