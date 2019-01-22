@@ -324,17 +324,18 @@ a {
 /*----------------------------------
 ----------------Header--------------
 ------------------------------------*/
+.header-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*.header {
   background-color: $header-color1;
   background-position: center top, center;
   background-repeat: no-repeat;
   background-size: cover;
 
-  .header-logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
   .logo-container {
     display: flex;
