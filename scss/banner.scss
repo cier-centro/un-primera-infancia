@@ -1,6 +1,12 @@
 /*----------------------------------
 --------------Home-Items------------
 ------------------------------------*/
+.banner {
+  .first-col {
+    @extend %center-vh;
+    text-align: center;
+  }
+}
 /*
 .home-videos {
   position: relative;

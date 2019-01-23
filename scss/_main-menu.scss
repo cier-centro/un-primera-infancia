@@ -1,6 +1,21 @@
 /*----------------------------------
 ---------------Main Menu------------
 ------------------------------------*/
+
+.main-menu {
+  .navbar {
+    margin: 0 -15px;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+}
 /*
 %main-menu-button {
   height: 140px;

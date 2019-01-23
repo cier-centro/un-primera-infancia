@@ -1,9 +1,16 @@
 /*----------------------------------
 ----------------General--------------
 ------------------------------------*/
-
 * {
   box-sizing: border-box;
+}
+
+%center-vh {
+  display: flex!important;
+  display: -ms-flexbox!important;
+  display: -webkit-box!important;
+  align-items: center;
+  justify-content: center;
 }
 /*body {
   font-family: 'Montserrat-Regular', sans-serif;
