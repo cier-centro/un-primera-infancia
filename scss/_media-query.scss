@@ -59,6 +59,52 @@
 
       &.right {
         margin-right: -20%;
+        float: right;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    .men-logo {
+      max-width: 80%;
+    }
+  }
+
+  .main-menu {
+    .navbar {
+      padding: 16px 4%;
+    }
+
+    .nav-item {
+      &:not(:last-child) {
+        .nav-link {
+          border-right: 1px solid $blue-menu-separator;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    .men-logo {
+      max-width: 350px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    .header-logo-container {
+      width: 360px;
+      margin: 0 auto 15px;
+    }
+  }
+
+  .main-menu {
+    .nav-item {
+      &:not(:last-child) {
+        .nav-link {
+          border-bottom: 1px solid rgba($blue-menu-separator, 0.5);
+        }
       }
     }
   }

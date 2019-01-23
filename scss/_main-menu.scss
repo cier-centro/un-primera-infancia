@@ -1,8 +1,9 @@
 /*----------------------------------
 ---------------Main Menu------------
 ------------------------------------*/
-
 .main-menu {
+  background-color: $white-menu;
+
   .navbar {
     margin: 0 -15px;
   }
@@ -15,7 +16,12 @@
     width: 100%;
     text-align: center;
     font-size: 1em;
-    font-family: 'WorkSans-Regular';
+    font-family: 'WorkSans-Medium';
+
+    .nav-link {
+      color: $blue-menu-tx;
+      padding: 5px;
+    }
   }
 }
 /*
