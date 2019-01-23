@@ -1,7 +1,18 @@
 /*----------------------------------
 ----------------Footer--------------
 ------------------------------------*/
-/*.footer {
+
+.footer {
+  background-color: $gray-footer-bg;
   padding: 50px 0;
-  background: $footer-bg;
-}*/
+
+  p {
+    color: $white;
+    font-size: 0.7em;
+    font-family: 'WorkSans-Light';
+
+    b {
+      font-family: 'WorkSans-SemiBold';
+    }
+  }
+}

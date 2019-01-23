@@ -1,8 +1,67 @@
 /*----------------------------------
 --------------Media Query-----------
 ------------------------------------*/
-body {
-  font-size: 22px;
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 21px;
+  }
+
+  .main-content {
+    .section-image {
+      width: 100%;
+    }
+
+    .image-container {
+      display: flex!important;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body {
+    font-size: 20px;
+  }
+
+  .main-content {
+    .image-container {
+      overflow: hidden;
+    }
+
+    .section-image {
+      width: 140%;
+      position: absolute;
+      bottom: -40%;
+
+      &.left {
+        left: -40%;
+      }
+
+      &.right {
+        right: -40%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .main-content {
+    .image-container {
+      overflow: hidden;
+    }
+
+    .section-image {
+      width: 60%;
+      margin-bottom: -20%;
+
+      &.left {
+        margin-left: -20%;
+      }
+
+      &.right {
+        margin-right: -20%;
+      }
+    }
+  }
 }
 /*
 @media screen and (min-width: 1200px) {

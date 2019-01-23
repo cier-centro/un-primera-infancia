@@ -1,18 +1,19 @@
 /*----------------------------------
 -------------Main Content-----------
 ------------------------------------*/
+
 .main-content {
-  .image-container {
-    overflow: hidden;
-  }
+  p {
+    position: relative;
 
-  .section-image {
-    width: 140%;
-    position: absolute;
-
-    &.left {
-      left: -40%;
-      bottom: -40%;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 63px;
+      background-color: gray;
+      top: 0;
+      left: -25px;
     }
   }
 }
