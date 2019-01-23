@@ -1,10 +1,25 @@
 /*----------------------------------
 --------------Home-Items------------
 ------------------------------------*/
+
 .banner {
   .first-col {
     @extend %center-vh;
     text-align: center;
+  }
+
+  .places {
+    .place-info {
+      label {
+        font-size: 2.05em;
+        font-family: 'WorkSans-SemiBold';
+      }
+
+      p {
+        font-size: 1.59em;
+        font-family: 'WorkSans-Light';
+      }
+    }
   }
 }
 /*

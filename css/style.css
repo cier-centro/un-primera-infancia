@@ -45,19 +45,31 @@
 /*----------------------------------
 -----------------Fonts--------------
 ------------------------------------*/
-/*@font-face {
-  font-family: 'Montserrat-Regular';
+@font-face {
+  font-family: "WorkSans-Regular";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+  src: url("../fonts/worksans/WorkSans-Regular.ttf");
 }
 @font-face {
-  font-family: 'Montserrat-Medium';
+  font-family: "WorkSans-SemiBold";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/montserrat/Montserrat-Medium.ttf");
+  src: url("../fonts/worksans/WorkSans-SemiBold.ttf");
 }
 @font-face {
+  font-family: "WorkSans-Light";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/worksans/WorkSans-Light.ttf");
+}
+@font-face {
+  font-family: "WorkSans-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/worksans/WorkSans-Medium.ttf");
+}
+/*@font-face {
   font-family: 'Montserrat-Bold';
   font-style: normal;
   font-weight: 700;
@@ -80,6 +92,46 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
+}
+
+p {
+  font-family: "WorkSans-Regular";
+  line-height: 105%;
+  font-size: 0.85em;
+  color: #4d4d4d;
+}
+
+h1 {
+  font-size: 2.27em;
+  font-family: "WorkSans-Light";
+}
+
+.display-1 {
+  font-size: 2.95em;
+  font-family: "WorkSans-Light";
+}
+.display-1 b {
+  font-family: "WorkSans-SemiBold";
+}
+
+.display-2 {
+  font-size: 2.05em;
+  font-family: "WorkSans-SemiBold";
+}
+
+.display-3 {
+  font-size: 1.59em;
+  font-family: "WorkSans-Light";
+}
+
+.data-event {
+  font-size: 2.27em;
+  font-family: "WorkSans-SemiBold";
+}
+
+.btn-light {
+  font-size: 1em;
+  font-family: "WorkSans-Medium";
 }
 
 /*body {
@@ -429,6 +481,8 @@ button.close {
 .main-menu .nav-item {
   width: 100%;
   text-align: center;
+  font-size: 1em;
+  font-family: "WorkSans-Regular";
 }
 
 /*
@@ -658,6 +712,14 @@ button.close {
 .banner .first-col {
   text-align: center;
 }
+.banner .places .place-info label {
+  font-size: 2.05em;
+  font-family: "WorkSans-SemiBold";
+}
+.banner .places .place-info p {
+  font-size: 1.59em;
+  font-family: "WorkSans-Light";
+}
 
 /*
 .home-videos {
@@ -727,6 +789,21 @@ button.close {
   }
 }*/
 /*----------------------------------
+-------------Main Content-----------
+------------------------------------*/
+.main-content .image-container {
+  overflow: hidden;
+}
+.main-content .section-image {
+  width: 140%;
+  position: absolute;
+}
+.main-content .section-image.left {
+  left: -40%;
+  bottom: -40%;
+}
+
+/*----------------------------------
 ----------------Footer--------------
 ------------------------------------*/
 /*.footer {
@@ -734,12 +811,13 @@ button.close {
   background: $footer-bg;
 }*/
 /*----------------------------------
-----------------Table--------------
-------------------------------------*/
-/*----------------------------------
 --------------Media Query-----------
 ------------------------------------*/
-/*/
+body {
+  font-size: 22px;
+}
+
+/*
 @media screen and (min-width: 1200px) {
   .bimester-content {
     .guide-modal-button,

@@ -1,16 +1,56 @@
 /*----------------------------------
 ----------------General--------------
 ------------------------------------*/
+
 * {
   box-sizing: border-box;
 }
 
 %center-vh {
   display: flex!important;
-  display: -ms-flexbox!important;
-  display: -webkit-box!important;
   align-items: center;
   justify-content: center;
+}
+
+p {
+  font-family: 'WorkSans-Regular';
+  line-height: 105%;
+  font-size: 0.85em;
+  color: $gray-text;
+}
+
+h1 {
+  font-size: 2.27em;
+  font-family: 'WorkSans-Light';
+}
+
+.display-1 {
+  font-size: 2.95em;
+  font-family: 'WorkSans-Light';
+
+  b {
+    font-family: 'WorkSans-SemiBold';
+  }
+}
+
+.display-2 {
+  font-size: 2.05em;
+  font-family: 'WorkSans-SemiBold';
+}
+
+.display-3 {
+  font-size: 1.59em;
+  font-family: 'WorkSans-Light';
+}
+
+.data-event {
+  font-size: 2.27em;
+  font-family: 'WorkSans-SemiBold';
+}
+
+.btn-light {
+  font-size: 1em;
+  font-family: 'WorkSans-Medium';
 }
 /*body {
   font-family: 'Montserrat-Regular', sans-serif;
