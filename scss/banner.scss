@@ -1,6 +1,7 @@
 /*----------------------------------
 --------------Home-Items------------
 ------------------------------------*/
+
 .banner {
   .first-col {
     @extend %center-vh;
@@ -46,11 +47,6 @@
 
       .buttons-group {
         text-align: center;
-      }
-
-      .btn-light {
-        display: block;
-        margin: 0 auto 15px;
       }
     }
   }
