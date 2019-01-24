@@ -131,9 +131,10 @@ h1 {
   color: #004a84;
   display: block;
   margin: 0 auto 15px;
-  padding: 9px 40px 9px 60px;
+  padding: 14px 40px 14px 60px;
   border-radius: 0 55px 55px 0;
   position: relative;
+  line-height: 100%;
 }
 .btn-light:before {
   content: "";
@@ -423,14 +424,13 @@ a {
 /*----------------------------------
 ----------------Modal--------------
 ------------------------------------*/
-/*
 .modal-dialog {
   margin-top: 140px;
 }
 
 .btn-modal {
   background-color: white;
-  color: $heading-color !important;
+  color: #6699ff !important;
   font-size: 1.18em;
   font-weight: 600;
   border-radius: 25px;
@@ -446,19 +446,27 @@ a {
 
 .modal-title {
   padding: 0 40px 7px;
-  color: $heading-color;
+  color: #004a84;
   font-size: 1.87em;
   text-align: center;
-  font-family: 'Montserrat-Medium';
+  font-family: "WorkSans-Medium";
   position: relative;
-
-  big {
-    display: block;
-  }
-
-  &:after {
-    @extend %purple-underline;
-  }
+  width: 100%;
+  line-height: 110%;
+}
+.modal-title big {
+  display: block;
+}
+.modal-title:after {
+  content: "";
+  position: absolute;
+  width: 142px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  margin: auto;
+  border: 1px solid #004a84;
 }
 
 button.close {
@@ -469,25 +477,30 @@ button.close {
   opacity: 1;
   color: white;
   font-size: 2em;
-  font-family: 'Montserrat-Medium';
-  @include background-gradient-properties($cpa-color, $red-menu-color);
+  font-family: "WorkSans-Medium";
+  background: #f42f63;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .modal-body {
   line-height: 200%;
   padding: 15px 40px;
-
-  embed,
-  iframe,
-  object {
-    height: 30vw;
-  }
+  overflow: hidden;
+}
+.modal-body embed,
+.modal-body iframe,
+.modal-body object {
+  height: 31vw;
+  border: none;
+  margin-left: -140px;
 }
 
 .modal-backdrop.in {
   opacity: 0.8;
-  background-color: $modal-backdrop-bg;
-}*/
+  background-color: #fff;
+}
+
 /*----------------------------------
 ---------------Main Menu------------
 ------------------------------------*/

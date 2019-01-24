@@ -48,9 +48,10 @@ h1 {
   color: $blue-menu-tx;
   display: block;
   margin: 0 auto 15px;
-  padding: 9px 40px 9px 60px;
+  padding: 14px 40px 14px 60px;
   border-radius: 0 55px 55px 0;
   position: relative;
+  line-height: 100%;
 
   &:before {
     content: "";

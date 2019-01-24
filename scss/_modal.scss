@@ -1,7 +1,7 @@
 /*----------------------------------
 ----------------Modal--------------
 ------------------------------------*/
-/*
+
 .modal-dialog {
   margin-top: 140px;
 }
@@ -24,18 +24,28 @@
 
 .modal-title {
   padding: 0 40px 7px;
-  color: $heading-color;
+  color: $blue-menu-tx;
   font-size: 1.87em;
   text-align: center;
-  font-family: 'Montserrat-Medium';
+  font-family: 'WorkSans-Medium';
   position: relative;
+  width: 100%;
+  line-height: 110%;
 
   big {
     display: block;
   }
 
   &:after {
-    @extend %purple-underline;
+    content: "";
+    position: absolute;
+    width: 142px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    margin: auto;
+    border: 1px solid $blue-menu-tx;
   }
 }
 
@@ -47,22 +57,27 @@ button.close {
   opacity: 1;
   color: white;
   font-size: 2em;
-  font-family: 'Montserrat-Medium';
-  @include background-gradient-properties($cpa-color, $red-menu-color);
+  font-family: 'WorkSans-Medium';
+  background: $red-banner;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .modal-body {
   line-height: 200%;
   padding: 15px 40px;
+  overflow: hidden;
 
   embed,
   iframe,
   object {
-    height: 30vw;
+    height: 31vw;
+    border: none;
+    margin-left: -140px;
   }
 }
 
 .modal-backdrop.in {
   opacity: 0.8;
-  background-color: $modal-backdrop-bg;
-}*/
+  background-color: $white;
+}

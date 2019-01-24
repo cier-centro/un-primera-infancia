@@ -1,0 +1,100 @@
+/*HOJA DE ESTILOS LANDING VIRTUAL EDUCA*/
+
+body
+{
+	margin:0;
+	padding: 0;
+	color: white;
+}
+
+.formulario
+{
+	background-color: #2194D2;
+	padding: 20px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+form
+{
+	margin-left: 20%;
+	color: white;
+}
+
+img
+{
+	margin:2px;
+}
+
+.centrada img
+{
+	margin: 0 auto;
+}
+
+.textura
+{
+	background-color: #13416F;
+	padding:20px 10px 20px 10px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.logo
+{
+	margin-bottom:20px;
+}
+
+.rowFormulario
+{
+	margin-top:20px;
+	
+}
+/*FORMULARIO*/
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #FEBD2A;
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #DB9B19;
+}
+
+.form-landing input {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+.form-landing textarea {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+.form-landing select {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
