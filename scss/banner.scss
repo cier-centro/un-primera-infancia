@@ -1,11 +1,58 @@
 /*----------------------------------
 --------------Home-Items------------
 ------------------------------------*/
-
 .banner {
   .first-col {
     @extend %center-vh;
     text-align: center;
+    background: $red-banner url("#{$images-path}banner_texture.png") no-repeat top center / cover;
+  }
+
+  .first-row {
+    .data-event,
+    h1,
+    p {
+      color: $white;
+    }
+
+    .display-1 {
+      margin-top: 100px;
+    }
+
+    .data-event {
+      font-size: 2.27em;
+      font-family: 'WorkSans-SemiBold';
+      border-top: 1px solid $white;
+      border-bottom: 1px solid $white;
+      padding: 20px 40px;
+      margin: 80px 0 100px;
+    }
+
+    .second-col {
+      background: url("#{$images-path}banner_photo.png") no-repeat center / cover;
+
+      .row {
+        height: 100%;
+      }
+    }
+
+    .first-half {
+      background-color: rgba($red-banner, 0.4);
+      padding: 80px 40px 30px;
+
+      p {
+        margin: 30px 0;
+      }
+
+      .buttons-group {
+        text-align: center;
+      }
+
+      .btn-light {
+        display: block;
+        margin: 0 auto 15px;
+      }
+    }
   }
 
   .places {
