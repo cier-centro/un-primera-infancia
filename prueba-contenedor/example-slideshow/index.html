@@ -14,7 +14,7 @@
 var data = [
   {
     id         : "slide1",
-    imagePath  : "img1.jpg",
+    imagePath  : "http://placekitten.com/g/400/300",
     imageAlt   : "Slide 1 Image",
     title      : "Slide 1",
     subtitle   : "Slide 1 Image SubTitle",
@@ -24,7 +24,7 @@ var data = [
   },
   {
     id         : "slide2",
-    imagePath  : "img2.jpg",
+    imagePath  : "http://placekitten.com/g/200/300",
     imageAlt   : "Slide 2 Image",
     title      : "Slide 2",
     subtitle   : "Slide 2 Image SubTitle",
@@ -34,7 +34,7 @@ var data = [
   },
   {
     id         : "slide3",
-    imagePath  : "img3.jpg",
+    imagePath  : "http://placekitten.com/g/300/150",
     imageAlt   : "Slide 3 Image",
     title      : "Slide 3",
     subtitle   : "Slide 3 Image SubTitle",
@@ -115,10 +115,11 @@ var Slides = React.createClass({
 
 var Slide = React.createClass({
   render: function() {
-    var classes = React.addons.classSet({
+    /*var classes = React.addons.classSet({
       'slide': true,
       'slide--active': this.props.active
-    });
+    });*/
+    var classes =(this.props.active)? 'slide slide--active':'slide';
     return (
       <div className={classes}>
         <img src={this.props.imagePath} alt={this.props.imageAlt} />
