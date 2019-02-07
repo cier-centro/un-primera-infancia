@@ -1,7 +1,6 @@
 /*----------------------------------
 ----------------Footer--------------
 ------------------------------------*/
-
 .footer {
   background-color: $gray-footer-bg;
   padding: 25px 0;
@@ -10,6 +9,7 @@
     color: $white;
     font-size: 0.7em;
     font-family: 'WorkSans-Light';
+    margin: 0;
 
     b {
       font-family: 'WorkSans-SemiBold';

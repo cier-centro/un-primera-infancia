@@ -964,12 +964,13 @@ button.close {
 ------------------------------------*/
 .footer {
   background-color: #808080;
-  padding: 50px 0;
+  padding: 25px 0;
 }
 .footer p {
   color: #fff;
   font-size: 0.7em;
   font-family: "WorkSans-Light";
+  margin: 0;
 }
 .footer p b {
   font-family: "WorkSans-SemiBold";
@@ -1047,7 +1048,7 @@ button.close {
     display: block;
   }
   .header .header-logo-container {
-    width: 360px;
+    width: 300px;
     margin: 0 auto 15px;
   }
 
