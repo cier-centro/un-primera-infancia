@@ -1,7 +1,6 @@
 /*----------------------------------
 ----------------General--------------
 ------------------------------------*/
-
 * {
   box-sizing: border-box;
 }
@@ -23,6 +22,10 @@ td {
   line-height: 105%;
   font-size: 0.85em;
   color: $gray-text;
+}
+
+li {
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -90,6 +93,10 @@ h2 {
 
 .unal-white-logo {
   margin: auto auto 35px;
+}
+
+.shadow-line-bottom {
+  @include box-shadow-properties(inset 0 -13px 10px -10px rgba(0,0,0,0.15));
 }
 /*body {
   font-family: 'Montserrat-Regular', sans-serif;

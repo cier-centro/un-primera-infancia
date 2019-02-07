@@ -1,8 +1,12 @@
 /*----------------------------------
 -------------Main Content-----------
 ------------------------------------*/
-
 .main-content {
+  h1 {
+    text-align: center;
+    margin: 0 0 15px;
+  }
+
   p:first-of-type {
     position: relative;
 
@@ -41,8 +45,8 @@
     }
   }
 
-  .challenge-section,
-  .participant-section {
+  .award-section,
+  .challenge-section {
     h1 {
       color: $blue-menu-separator;
     }
@@ -54,8 +58,8 @@
     }
   }
 
-  .award-section,
-  .organizers-section {
+  .organizers-section,
+  .participant-section {
     h1 {
       color: $purple-award-title;
     }
@@ -65,5 +69,9 @@
         background-color: $purple-award-title;
       }
     }
+  }
+
+  .organizers-section {
+    margin-bottom: 30px;
   }
 }

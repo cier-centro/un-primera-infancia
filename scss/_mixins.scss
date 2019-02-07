@@ -11,6 +11,11 @@
   background: -ms-linear-gradient(left, $color1 0%, $color2 100%);
   background: linear-gradient(to right, $color1 0%, $color2 100%);
 }
+@mixin box-shadow-properties($value) {
+  -webkit-box-shadow: $value;
+  -moz-box-shadow: $value;
+  box-shadow: $value;
+}
 /*@mixin transition-properties($values) {
   -webkit-transition: $values;
   -moz-transition: $values;
@@ -23,11 +28,6 @@
   -moz-border-radius: $value;
   -ms-border-radius: $value;
   border-radius: $value;
-}
-@mixin box-shadow-properties($value) {
-  -webkit-box-shadow: $value;
-  -moz-box-shadow: $value;
-  box-shadow: $value;
 }
 @mixin background-button-properties($color1, $color2) {
   background: $color1 !important;
