@@ -9,7 +9,7 @@ body
 
 .formulario
 {
-	background-color: #2194D2;
+	background-color: #3366cc;
 	padding: 20px;
 	-webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -18,7 +18,6 @@ body
 }
 form
 {
-	margin-left: 20%;
 	color: white;
 }
 
@@ -65,8 +64,8 @@ input[type=text], input[type=email], select, textarea {
 
 input[type=submit] {
     width: 100%;
-    background-color: #FEBD2A;
-    color: white;
+    background-color: #f42f63;
+    color: white !important;
     padding: 10px;
     margin: 8px 0;
     border: none;
@@ -75,7 +74,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #DB9B19;
+    background-color: #004a84;    
 }
 
 .form-landing input {

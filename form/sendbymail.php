@@ -5,7 +5,7 @@ include_once('PHPMailer/class.smtp.php');
 
 if (isset($_POST['email'])) {
     
-    if (!isset($_POST['name']) || !isset($_POST['country']) || !isset($_POST['email'])) {
+    if (!isset($_POST['name']) || !isset($_POST['phone']) || !isset($_POST['email'])) {
         echo'<script type="text/javascript">
                 alert("Favor diligencie todos los datos.");
                 window.history.back();
@@ -20,7 +20,7 @@ if (isset($_POST['email'])) {
     $mail->Host = "smtp.gmail.com";
     $mail->Port = 465;
     /*
-        En configuracion de gmail remitente->Seguridad->Permitir aplicaciones no seguras->activar
+        En configuracion del gmail remitente->Seguridad->Permitir aplicaciones no seguras->activar
     */
     $mail->Username ='remitente@gmail.com';
     $mail->Password = 'claveremitente'; 
@@ -31,10 +31,9 @@ if (isset($_POST['email'])) {
     
     $message = "Detalles del formulario de contacto: <br>";
     $message .= "Nombre: " . $_POST['name'] . "<br>";
-    $message .= "Pais: " . $_POST['country'] . "<br>";
+    $message .= "Teléfono: " . $_POST['phone'] . "<br>";
     $message .= "E-mail: " . $_POST['email'] . "<br>";
     $message .= "Sugerencias: " . $_POST['messageSuggestion'] . "<br>";
-    $message .= "Opción: " . $_POST['messageOption'] . "<br>";
     
     $mail->AddAddress($to);
     $mail->Subject = $subject;
@@ -43,12 +42,12 @@ if (isset($_POST['email'])) {
     
     if($mail->Send()){
         echo '<script type="text/javascript">
-                alert("Enviado Correctamente");
+                console.log("Enviado Correctamente");
                 window.location = "index.html"
              </script>';
     }else{
         echo '<script type="text/javascript">
-                alert("NO ENVIADO, intentar de nuevo");
+                console.log("NO ENVIADO, intentar de nuevo");
              </script>';
     }
 }
