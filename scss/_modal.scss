@@ -2,7 +2,7 @@
 ----------------Modal--------------
 ------------------------------------*/
 .modal-dialog {
-  margin-top: 140px;
+  margin-top: 10vh;
 }
 
 .btn-modal {
@@ -70,7 +70,7 @@ button.close {
   embed,
   iframe,
   object {
-    min-height: 53vh;
+    min-height: 60vh;
     border: none;
   }
 }

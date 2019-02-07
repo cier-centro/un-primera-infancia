@@ -451,7 +451,7 @@ a {
 ----------------Modal--------------
 ------------------------------------*/
 .modal-dialog {
-  margin-top: 140px;
+  margin-top: 10vh;
 }
 
 .btn-modal {
@@ -517,7 +517,7 @@ button.close {
 .modal-body embed,
 .modal-body iframe,
 .modal-body object {
-  min-height: 53vh;
+  min-height: 60vh;
   border: none;
 }
 
@@ -1058,6 +1058,12 @@ button.close {
 
   .main-menu .nav-item:not(:last-child) .nav-link {
     border-bottom: 1px solid rgba(102, 153, 255, 0.5);
+  }
+
+  .modal-body embed,
+.modal-body iframe,
+.modal-body object {
+    min-height: 80vh;
   }
 }
 /*
