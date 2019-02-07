@@ -1,6 +1,7 @@
 /*----------------------------------
 ---------------Main Menu------------
 ------------------------------------*/
+
 .main-menu {
   background-color: $white-menu;
 
@@ -21,6 +22,7 @@
     .nav-link {
       color: $blue-menu-tx;
       padding: 5px;
+      cursor: pointer;
     }
   }
 }
