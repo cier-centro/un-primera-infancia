@@ -1,6 +1,7 @@
 /*----------------------------------
 --------------Home-Items------------
 ------------------------------------*/
+
 .banner {
   .first-col {
     background: $blue-banner url("#{$images-path}banner_texture.png") no-repeat top center / cover;
@@ -67,6 +68,10 @@
   }
 
   .places {
+    img {
+      margin: 15px 0;
+    }
+
     .place-info {
       label {
         font-size: 2.05em;
