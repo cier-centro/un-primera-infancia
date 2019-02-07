@@ -1,7 +1,6 @@
 /*----------------------------------
 ----------------Modal--------------
 ------------------------------------*/
-
 .modal-dialog {
   margin-top: 140px;
 }
@@ -58,7 +57,7 @@ button.close {
   color: white;
   font-size: 2em;
   font-family: 'WorkSans-Medium';
-  background: $red-banner;
+  background: $blue-banner;
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -71,9 +70,8 @@ button.close {
   embed,
   iframe,
   object {
-    height: 31vw;
+    min-height: 53vh;
     border: none;
-    margin-left: -140px;
   }
 }
 

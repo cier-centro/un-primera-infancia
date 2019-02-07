@@ -70,6 +70,12 @@
   font-weight: 500;
   src: url("../fonts/worksans/WorkSans-Medium.ttf");
 }
+@font-face {
+  font-family: "CandyBeans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/candybeans/CandyBeans.otf");
+}
 /*@font-face {
   font-family: 'Montserrat-Bold';
   font-style: normal;
@@ -89,12 +95,6 @@
   box-sizing: border-box;
 }
 
-.banner .first-col {
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-}
-
 p {
   font-family: "WorkSans-Regular";
   line-height: 105%;
@@ -112,7 +112,7 @@ h1 {
   font-family: "WorkSans-Light";
 }
 .display-1 b {
-  font-family: "WorkSans-SemiBold";
+  font-family: "CandyBeans";
 }
 
 .display-2 {
@@ -144,6 +144,10 @@ h1 {
   width: 50px;
   height: 100%;
   background: #e2ecfd;
+}
+
+.unal-white-logo {
+  margin: auto auto 35px;
 }
 
 /*body {
@@ -478,7 +482,7 @@ button.close {
   color: white;
   font-size: 2em;
   font-family: "WorkSans-Medium";
-  background: #f42f63;
+  background: #3366cc;
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -491,9 +495,8 @@ button.close {
 .modal-body embed,
 .modal-body iframe,
 .modal-body object {
-  height: 31vw;
+  min-height: 53vh;
   border: none;
-  margin-left: -140px;
 }
 
 .modal-backdrop.in {
@@ -749,8 +752,12 @@ button.close {
 --------------Home-Items------------
 ------------------------------------*/
 .banner .first-col {
-  text-align: center;
-  background: #f42f63 url("../images/banner_texture.png") no-repeat top center/cover;
+  background: #3366cc url("../images/banner_texture.png") no-repeat top center/cover;
+}
+.banner .first-row small {
+  display: block;
+  font-family: "WorkSans-Light";
+  font-size: 0.5em;
 }
 .banner .first-row .data-event,
 .banner .first-row h1,
@@ -758,15 +765,20 @@ button.close {
   color: #fff;
 }
 .banner .first-row .display-1 {
-  margin-top: 100px;
+  margin: 40px 0 0 30px;
+}
+.banner .first-row .display-1 small {
+  font-size: 0.4em;
 }
 .banner .first-row .data-event {
   font-size: 2.27em;
   font-family: "WorkSans-SemiBold";
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  padding: 20px 40px;
-  margin: 80px 0 100px;
+  border-left: 1px solid #fff;
+  padding: 0 1vw 20px;
+  margin: 40px 0 50px 1vw;
+}
+.banner .first-row .data-event b {
+  font-family: "CandyBeans";
 }
 .banner .first-row .second-col {
   background: url("../images/banner_photo.png") no-repeat center/cover;
@@ -775,7 +787,7 @@ button.close {
   height: 100%;
 }
 .banner .first-row .first-half {
-  background-color: rgba(244, 47, 99, 0.4);
+  background-color: rgba(51, 102, 204, 0.4);
   padding: 80px 40px 30px;
 }
 .banner .first-row .first-half p {
@@ -966,6 +978,10 @@ button.close {
   .header .header-logo-container {
     width: 360px;
     margin: 0 auto 15px;
+  }
+
+  .banner .first-col .row {
+    justify-content: center;
   }
 
   .main-menu .nav-item:not(:last-child) .nav-link {

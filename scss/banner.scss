@@ -1,15 +1,18 @@
 /*----------------------------------
 --------------Home-Items------------
 ------------------------------------*/
-
 .banner {
   .first-col {
-    @extend %center-vh;
-    text-align: center;
-    background: $red-banner url("#{$images-path}banner_texture.png") no-repeat top center / cover;
+    background: $blue-banner url("#{$images-path}banner_texture.png") no-repeat top center / cover;
   }
 
   .first-row {
+    small {
+      display: block;
+      font-family: 'WorkSans-Light';
+      font-size: 0.5em;
+    }
+
     .data-event,
     h1,
     p {
@@ -17,16 +20,23 @@
     }
 
     .display-1 {
-      margin-top: 100px;
+      margin: 40px 0 0 30px;
+
+      small {
+        font-size: 0.4em;
+      }
     }
 
     .data-event {
       font-size: 2.27em;
       font-family: 'WorkSans-SemiBold';
-      border-top: 1px solid $white;
-      border-bottom: 1px solid $white;
-      padding: 20px 40px;
-      margin: 80px 0 100px;
+      border-left: 1px solid $white;
+      padding: 0 1vw 20px;
+      margin: 40px 0 50px 1vw;
+
+      b {
+        font-family: 'CandyBeans';
+      }
     }
 
     .second-col {
@@ -38,7 +48,7 @@
     }
 
     .first-half {
-      background-color: rgba($red-banner, 0.4);
+      background-color: rgba($blue-banner, 0.4);
       padding: 80px 40px 30px;
 
       p {

@@ -56,8 +56,21 @@
             <a class="nav-link inside-link" href="#organizings">Organizadores</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="http://www.gitei.edu.co/" target="_blank">Contacto</a>
+            <a class="nav-link" data-toggle="modal" data-target="#modal1">Contacto</a>
           </li>
+          <div class="modal fade" id="modal1">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Inscripción individual</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <iframe src="form/index.html" height="100%" width="100%"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
         </ul>
       </div>
     </nav>
@@ -65,60 +78,34 @@
   <div class="container-fluid banner">
     <div class="row first-row">
       <div class="col-md-6 col-lg-4 first-col">
-        <div class="">
-          <h1 class="display-1"><b>Edujam</b> 2019</h1>
-          <h1 class="display-3">Primera infancia</h1>
-          <div class="data-event">
-            08 y 09 de febrero
+        <div class="row">
+          <div class="col-xs-7">
+            <h1 class="display-1"><b>Edujam 2019</b><small>Educación inicial y preescolar</small></h1>
           </div>
+          <div class="col-xs-5 data-event">
+            <b>15 y 16</b><small>de febrero</small>
+          </div>
+        </div>
+        <div class="row">
+          <img class="img-fluid unal-white-logo" src="images/logo_unal_white.png">
         </div>
       </div>
       <div class="col-md-6 col-lg-8 second-col">
         <div class="row">
           <div class="col-md-12 col-lg-6 first-half">
-            <h1 class="display-2">¿Cómo inscribirme?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-              nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-              praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-            <div class="buttons-group">
-              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal1">
-                Inscripción individual
-              </button>
-              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal2">
-                Inscripción grupal
-              </button>
-              <div class="modal fade" id="modal1">
-                <div class="modal-dialog modal-xl">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title">Inscripción individual</h4>
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                      <iframe src="form/index.html" height="100%" width="100%"></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal fade" id="modal2">
-                <div class="modal-dialog modal-xl">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title">Inscripción grupal</h4>
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                      <iframe src="form/index.html" height="100%" width="100%"></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="col-md-6 d-none d-lg-block">
           </div>
         </div>
       </div>
+    </div>
+    <div class="row">
+      <a href="https://instrumentos.gitei.edu.co/952159?lang=es" class="btn btn-light" target="_blank">
+        Inscripción individual
+      </a>
+      <a href="https://instrumentos.gitei.edu.co/937591?lang=es" class="btn btn-light" target="_blank">
+        Inscripción grupal
+      </a>
     </div>
     <div class="row places">
       <div class="col-md-4 text-center">
@@ -151,34 +138,43 @@
       </div>
       <div class="col-lg-8">
         <h1 id="context">Contexto</h1>
-        <p>El ingreso al grado de transición es un gran acontecimiento para las niñas, los niños y sus familias, pues se inicia la gran aventura en el sistema educativo. Por ello, cuidar los detalles para que se sientan acogidos y reconocidos resulta fundamental e implica el reto de fortalecer el vínculo que se construye entre el hogar y la institución educativa. De esta forma, el colegio se constituye en un espacio donde las niñas y los niños quieren estar, porque allí viven experiencias, con sus pares y adultos que los acompañan, que les permiten sentirse valorados, al tiempo que potencian su deseo de conocer, vivir, explorar y aprender, al mismo tiempo que sus familias se sienten reconocidas y participan activamente en las dinámicas educativas, desde sus saberes y prácticas.</p>
-		<p>Por tal razón, El Ministerio de Educación Nacional ha venido adelantando acciones para asegurar las condiciones que generan bienestar en los niños y las niñas y, los motive a permanecer en esta gran aventura. Para lograrlo, ha planteado la construcción de una estrategia de acogida, bienestar y permanencia en preescolar con la participación activa de secretarías de educación, directivos docentes, maestros y familias en dicho proceso</p>
-		<p>La estrategia contempla, entre otras acciones, la entrega de un conjunto o set de objetos que tienen la intención de promover que las niñas, los niños y sus familias jueguen, exploren, narren, canten y creen; en articulación con los procesos educativos que se llevan a cabo en la institución durante todo el año escolar.  </p>
+        <p>El ingreso al grado de transición es un gran acontecimiento para las niñas, los niños y sus familias, pues se inicia la gran aventura en el sistema educativo. Por ello, cuidar los detalles para que se sientan acogidos y reconocidos
+          resulta fundamental e implica el reto de fortalecer el vínculo que se construye entre el hogar y la institución educativa. De esta forma, el colegio se constituye en un espacio donde las niñas y los niños quieren estar, porque allí viven
+          experiencias, con sus pares y adultos que los acompañan, que les permiten sentirse valorados, al tiempo que potencian su deseo de conocer, vivir, explorar y aprender, al mismo tiempo que sus familias se sienten reconocidas y participan
+          activamente en las dinámicas educativas, desde sus saberes y prácticas.</p>
+        <p>Por tal razón, El Ministerio de Educación Nacional ha venido adelantando acciones para asegurar las condiciones que generan bienestar en los niños y las niñas y, los motive a permanecer en esta gran aventura. Para lograrlo, ha planteado
+          la construcción de una estrategia de acogida, bienestar y permanencia en preescolar con la participación activa de secretarías de educación, directivos docentes, maestros y familias en dicho proceso</p>
+        <p>La estrategia contempla, entre otras acciones, la entrega de un conjunto o set de objetos que tienen la intención de promover que las niñas, los niños y sus familias jueguen, exploren, narren, canten y creen; en articulación con los
+          procesos educativos que se llevan a cabo en la institución durante todo el año escolar. </p>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-8">
         <h1 id="description">Descripción</h1>
-        <p>Con el propósito de construir colectivamente propuestas para el set de objetos asociados a la estrategia de acogida, bienestar y permanencia, el Ministerio de Educación Nacional en convenio con la Universidad Nacional de Colombia invitan a un evento de cocreación tipo JAM. Será una maratón creativa destinada a reunir personas de diferentes perfiles, habilidades, conocimientos y experiencias previas, con el fin de concebir el diseño y prototipo de diversos elementos que se relacionan e integran para atender los intereses de las niñas y niños. </p>
-		<p>Este EduJAM se basa en el gran reto de construir una solución que sea aplicable para todo el país, que reconozca y valore la diversidad y sea respetuosa del medio ambiente.  </p>
-		<p>Durante los días del evento se contará con la participación de expertos en educación inicial y diseño, quienes harán un acompañamiento permanente a los participantes y les orientarán sobre las características del reto y el desarrollo del prototipo. Adicionalmente, los participantes se encontrarán con ejercicios que promuevan el proceso creativo y finalmente con los materiales necesarios para la elaboración de maquetas que les permitan exponer con claridad sus propuestas.</p>
-		<p>Información general del EduJAM:</p>
-		<ul>
-			<li>Inscripciones abiertas hasta el 13 de febrero de 2019</li>
-			<li>Fechas del EduJAM: 15 y 16 de febrero de 2019</li>
-			<li>Horario de participación: 08:00 am a 05:30 pm los dos días, por lo que deberán garantizar disponibilidad de tiempo para sacar el máximo provecho del espacio</li>
-			<li>Los organizadores del EduJAM, ofrecerán refrigerios durante la jornada, así como almuerzo a los participantes seleccionados</li>
-			<li>Ciudades: Bogotá, Pereira y Cartagena</li>
-			<li>Los cupos de participación en cada ciudad serán: 25 personas en Pereira, 25 en Cartagena y 50 en Bogotá, por lo que la inscripción no garantiza la participación en el evento, para el proceso de selección se tendrá en cuenta la información suministrada en la inscripción</li>
-			<li>Las personas seleccionadas serán informadas vía telefónica y/o por correo electrónico, en donde se confirmará la participación y se informará el detalle de la agenda de actividades a realizar durante los 2 días del evento</li>
-		</ul>
-		<h2>¿Cómo inscribirse?</h2>
-		<p>Existen dos modalidades de participación:</p>
-		<ol>
-			<li>Conforma un grupo de mínimo 3 y máximo 5 personas. Recuerda que entre más interdisciplinario, con mayor diversidad de habilidades o profesiones, más puntos de vista y mejores resultados podrán obtener.</li>
-			<li>Si no es sencillo reunir un equipo, no importa, inscríbete de forma individual y harás parte de uno que podrás conformar el día de la maratón. Déjalo en nuestras manos.</li>
-		</ol>
-		<p>Despliega los términos y condiciones del concurso para más información y apresúrate. Recuerda que los cupos son limitados para cada ciudad.</p>
+        <p>Con el propósito de construir colectivamente propuestas para el set de objetos asociados a la estrategia de acogida, bienestar y permanencia, el Ministerio de Educación Nacional en convenio con la Universidad Nacional de Colombia invitan
+          a un evento de cocreación tipo JAM. Será una maratón creativa destinada a reunir personas de diferentes perfiles, habilidades, conocimientos y experiencias previas, con el fin de concebir el diseño y prototipo de diversos elementos que se
+          relacionan e integran para atender los intereses de las niñas y niños. </p>
+        <p>Este EduJAM se basa en el gran reto de construir una solución que sea aplicable para todo el país, que reconozca y valore la diversidad y sea respetuosa del medio ambiente. </p>
+        <p>Durante los días del evento se contará con la participación de expertos en educación inicial y diseño, quienes harán un acompañamiento permanente a los participantes y les orientarán sobre las características del reto y el desarrollo del
+          prototipo. Adicionalmente, los participantes se encontrarán con ejercicios que promuevan el proceso creativo y finalmente con los materiales necesarios para la elaboración de maquetas que les permitan exponer con claridad sus propuestas.</p>
+        <p>Información general del EduJAM:</p>
+        <ul>
+          <li>Inscripciones abiertas hasta el 13 de febrero de 2019</li>
+          <li>Fechas del EduJAM: 15 y 16 de febrero de 2019</li>
+          <li>Horario de participación: 08:00 am a 05:30 pm los dos días, por lo que deberán garantizar disponibilidad de tiempo para sacar el máximo provecho del espacio</li>
+          <li>Los organizadores del EduJAM, ofrecerán refrigerios durante la jornada, así como almuerzo a los participantes seleccionados</li>
+          <li>Ciudades: Bogotá, Pereira y Cartagena</li>
+          <li>Los cupos de participación en cada ciudad serán: 25 personas en Pereira, 25 en Cartagena y 50 en Bogotá, por lo que la inscripción no garantiza la participación en el evento, para el proceso de selección se tendrá en cuenta la
+            información suministrada en la inscripción</li>
+          <li>Las personas seleccionadas serán informadas vía telefónica y/o por correo electrónico, en donde se confirmará la participación y se informará el detalle de la agenda de actividades a realizar durante los 2 días del evento</li>
+        </ul>
+        <h2>¿Cómo inscribirse?</h2>
+        <p>Existen dos modalidades de participación:</p>
+        <ol>
+          <li>Conforma un grupo de mínimo 3 y máximo 5 personas. Recuerda que entre más interdisciplinario, con mayor diversidad de habilidades o profesiones, más puntos de vista y mejores resultados podrán obtener.</li>
+          <li>Si no es sencillo reunir un equipo, no importa, inscríbete de forma individual y harás parte de uno que podrás conformar el día de la maratón. Déjalo en nuestras manos.</li>
+        </ol>
+        <p>Despliega los términos y condiciones del concurso para más información y apresúrate. Recuerda que los cupos son limitados para cada ciudad.</p>
       </div>
       <div class="col-lg-4 image-container">
         <img class="section-image right" src="images/img_section_2.png">
@@ -190,17 +186,19 @@
       </div>
       <div class="col-lg-8">
         <h1 id="challenge">Reto</h1>
-        <p>Anualmente, más de medio millón de niños y niñas de 5 años ingresan al grado de transición; sin embargo, en este nivel se presenta la segunda tasa más alta de deserción. Nuestro reto es cambiar esta situación, garantizar su acogida y generar vivencias significativas que los motiven a continuar su trayectoria escolar.</p>
-		<p>Te invitamos a participar del proceso de creación de un set de objetos para niños y niñas que les permita: expresar, crear, aprender, explorar, jugar y disfrutar a lo largo de su experiencia educativa. Estos elementos en su conjunto aportarán en la interacción entre niñas, niños, familias y maestros.</p>
-		<h2>Participantes </h2>
-		<ul>
-			<li>Licenciado en Educación Infantil (educación de primera infancia, educación inicial educación infantil o áreas afines)</li>
-			<li>Artistas visuales, plásticos, dramáticos</li>
-			<li>Psicólogos</li>
-			<li>Ingenieros</li>
-			<li>Arquitectos</li>
-			<li>Familias o cuidadores</li>
-		</ul>
+        <p>Anualmente, más de medio millón de niños y niñas de 5 años ingresan al grado de transición; sin embargo, en este nivel se presenta la segunda tasa más alta de deserción. Nuestro reto es cambiar esta situación, garantizar su acogida y
+          generar vivencias significativas que los motiven a continuar su trayectoria escolar.</p>
+        <p>Te invitamos a participar del proceso de creación de un set de objetos para niños y niñas que les permita: expresar, crear, aprender, explorar, jugar y disfrutar a lo largo de su experiencia educativa. Estos elementos en su conjunto
+          aportarán en la interacción entre niñas, niños, familias y maestros.</p>
+        <h2>Participantes </h2>
+        <ul>
+          <li>Licenciado en Educación Infantil (educación de primera infancia, educación inicial educación infantil o áreas afines)</li>
+          <li>Artistas visuales, plásticos, dramáticos</li>
+          <li>Psicólogos</li>
+          <li>Ingenieros</li>
+          <li>Arquitectos</li>
+          <li>Familias o cuidadores</li>
+        </ul>
       </div>
     </div>
   </div>

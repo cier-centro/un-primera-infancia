@@ -99,6 +99,14 @@
     }
   }
 
+  .banner {
+    .first-col {
+      .row {
+        justify-content: center;
+      }
+    }
+  }
+
   .main-menu {
     .nav-item {
       &:not(:last-child) {
