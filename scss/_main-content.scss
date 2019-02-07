@@ -1,6 +1,7 @@
 /*----------------------------------
 -------------Main Content-----------
 ------------------------------------*/
+
 .main-content {
   p:first-of-type {
     position: relative;
@@ -28,7 +29,8 @@
   }
 
   .description-section {
-    h1 {
+    h1,
+    h2 {
       color: $pink-description-title;
     }
 

@@ -113,6 +113,10 @@ h1 {
   font-family: "WorkSans-Light";
 }
 
+h2 {
+  font-family: "WorkSans-Light";
+}
+
 .display-1 {
   font-size: 2.95em;
   font-family: "WorkSans-Light";
@@ -919,7 +923,8 @@ button.close {
 .main-content .context-section p:first-of-type:before {
   background-color: #3366cc;
 }
-.main-content .description-section h1 {
+.main-content .description-section h1,
+.main-content .description-section h2 {
   color: #f42f63;
 }
 .main-content .description-section p:first-of-type:before {
