@@ -1,7 +1,6 @@
 /*----------------------------------
 --------------Home-Items------------
 ------------------------------------*/
-
 .banner {
   .first-col {
     background: $blue-banner url("#{$images-path}banner_texture.png") no-repeat top center / cover;
@@ -49,7 +48,7 @@
     }
 
     .first-half {
-      background-color: rgba($blue-banner, 0.4);
+      @include background-gradient-properties($blue-banner, rgba($white, 0));
       padding: 80px 40px 30px;
 
       p {

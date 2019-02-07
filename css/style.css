@@ -799,7 +799,13 @@ button.close {
   height: 100%;
 }
 .banner .first-row .first-half {
-  background-color: rgba(51, 102, 204, 0.4);
+  background: #3366cc;
+  background: -moz-linear-gradient(left, #3366cc 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #3366cc), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(left, #3366cc 0%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left, #3366cc 0%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(left, #3366cc 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, #3366cc 0%, rgba(255, 255, 255, 0) 100%);
   padding: 80px 40px 30px;
 }
 .banner .first-row .first-half p {
@@ -894,17 +900,34 @@ button.close {
 /*----------------------------------
 -------------Main Content-----------
 ------------------------------------*/
-.main-content p {
+.main-content p:first-of-type {
   position: relative;
 }
-.main-content p:before {
+.main-content p:first-of-type:before {
   content: "";
   position: absolute;
   width: 10px;
   height: 63px;
-  background-color: gray;
   top: 0;
   left: -25px;
+}
+.main-content .context-section h1 {
+  color: #3366cc;
+}
+.main-content .context-section p:first-of-type:before {
+  background-color: #3366cc;
+}
+.main-content .description-section h1 {
+  color: #f42f63;
+}
+.main-content .description-section p:first-of-type:before {
+  background-color: #f42f63;
+}
+.main-content .challenge-section h1 {
+  color: #6699ff;
+}
+.main-content .challenge-section p:first-of-type:before {
+  background-color: #6699ff;
 }
 
 /*----------------------------------

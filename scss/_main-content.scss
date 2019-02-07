@@ -3,7 +3,7 @@
 ------------------------------------*/
 
 .main-content {
-  p {
+  p:first-of-type {
     position: relative;
 
     &:before {
@@ -11,9 +11,44 @@
       position: absolute;
       width: 10px;
       height: 63px;
-      background-color: gray;
       top: 0;
       left: -25px;
+    }
+  }
+
+  .context-section {
+    h1 {
+      color: $blue-banner;
+    }
+
+    p:first-of-type {
+      &:before {
+        background-color: $blue-banner;
+      }
+    }
+  }
+
+  .description-section {
+    h1 {
+      color: $pink-description-title;
+    }
+
+    p:first-of-type {
+      &:before {
+        background-color: $pink-description-title;
+      }
+    }
+  }
+
+  .challenge-section {
+    h1 {
+      color: $blue-menu-separator;
+    }
+
+    p:first-of-type {
+      &:before {
+        background-color: $blue-menu-separator;
+      }
     }
   }
 }
