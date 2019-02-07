@@ -1,7 +1,6 @@
 /*----------------------------------
 -------------Main Content-----------
 ------------------------------------*/
-
 .main-content {
   p:first-of-type {
     position: relative;
@@ -40,7 +39,8 @@
     }
   }
 
-  .challenge-section {
+  .challenge-section,
+  .participant-section {
     h1 {
       color: $blue-menu-separator;
     }
@@ -48,6 +48,19 @@
     p:first-of-type {
       &:before {
         background-color: $blue-menu-separator;
+      }
+    }
+  }
+
+  .award-section,
+  .organizers-section {
+    h1 {
+      color: $purple-award-title;
+    }
+
+    p:first-of-type {
+      &:before {
+        background-color: $purple-award-title;
       }
     }
   }

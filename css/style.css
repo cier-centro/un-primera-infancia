@@ -99,7 +99,9 @@ body {
   background: #fff url("../images/main_bg.png") no-repeat center 0/cover;
 }
 
-p {
+li,
+p,
+td {
   font-family: "WorkSans-Regular";
   line-height: 105%;
   font-size: 0.85em;
@@ -923,11 +925,21 @@ button.close {
 .main-content .description-section p:first-of-type:before {
   background-color: #f42f63;
 }
-.main-content .challenge-section h1 {
+.main-content .challenge-section h1,
+.main-content .participant-section h1 {
   color: #6699ff;
 }
-.main-content .challenge-section p:first-of-type:before {
+.main-content .challenge-section p:first-of-type:before,
+.main-content .participant-section p:first-of-type:before {
   background-color: #6699ff;
+}
+.main-content .award-section h1,
+.main-content .organizers-section h1 {
+  color: #be0c4d;
+}
+.main-content .award-section p:first-of-type:before,
+.main-content .organizers-section p:first-of-type:before {
+  background-color: #be0c4d;
 }
 
 /*----------------------------------
